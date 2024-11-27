@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Fundos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Fill/style.css' %}">
+</head>
+<body>
+    {% block content %}
+    
+    {% endblock %}
+
+    {% block fund_list %}
+        <section class="fundos-lista">
+            <table class="fill-quadro">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade de Cotas</th>
+                        <th>Valor da Cota</th>
+                        <th>Dividendos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for fill in Fill %}
+                        <tr>
+                            <td>{{ fill.name }}</td>
+                            <td>{{ fill.cota_qtd }}</td>
+                            <td>R$ {{ fill.valor|floatformat:2 }}</td>
+                            <td>R$ {{ fill.dividendos|floatformat:2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    {% endblock %}
+</body>
+</html>

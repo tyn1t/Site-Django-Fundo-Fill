@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fill-quadro {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.fill-quadro th, .fill-quadro td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+.fill-quadro th {
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.fill-quadro tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+
+/*  =====================Form input ============================*/
+
+.Form-input-fill {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    text-align: left; 
+
+}
+
+.Form-input-fill label{
+    margin-left: 10px;
+    padding: 4px;
+    font-size: 20px;
+}
+ 
+.Form-input-fill  input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+}
+
+
+.Form-input-fill {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Form-input-fill button {
+    width: 150px;
+    margin: 10px;
+    margin-left: 35px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    
+
+}
+
+.Form-input-fill button:hover {
+    background-color: #45a049;
+} 
+

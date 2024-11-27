@@ -1,0 +1,14 @@
+{% extends 'Fill\index.html' %}
+
+{% block content %}
+    <form action="" method="post">
+    {% csrf_token %}
+        <div class="Form-input-fill">
+            <label>Nome</label> <input type="text" name="fill">
+            <label>valor</label> <input type="number" name="valor">
+            <label>Cota Qtd</label> <input type="number" name="cota">
+            <label>Dividentos</label> <input type="number" name="dividy">
+            <button type="submit">Adicionar</button>
+        </div>
+    </form>
+{% endblock %}
